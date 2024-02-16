@@ -13,6 +13,7 @@ console.log(5.03e2); // 503
 
 // Maths
 Math.sin(3.5);
+const r = 2;
 const circumference = 2 * Math.PI * r;
 console.log("circumference of the circle " + circumference);
 
@@ -24,3 +25,18 @@ console.log("Hello"[1] === "e"); // true
 
 const age = 25;
 console.log(`I am ${age} years old.`); // Template literal
+
+// Adding strings and numbers
+console.log("3" + 4 + 5); // "345"
+console.log(3 + 4 + "5"); // "75"
+
+// For ... in
+const object = {
+    name: "Prathamesh",
+    age: 22,
+    height: 172,
+};
+// iterates through all the properties of an object
+for (const property in object) {
+    console.log(`${property}: ${object[property]}`);
+}
