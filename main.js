@@ -11,6 +11,21 @@ btn.addEventListener("click", () => {
     alert("Button was pressed");
 });
 
+window.onload = () => {
+    const headingTag = document.createElement("h1");
+    const headingText = document.createTextNode("Big heading");
+    headingTag.appendChild(headingText);
+    document.body.appendChild(headingTag);
+};
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", () => {
+    console.log("Menu opened");
+    menu.classList.contains("close")
+        ? menu.classList.remove("close")
+        : menu.classList.add("close");
+});
+
 // Adding Content with buttons
 const story = document.body.querySelector(".story");
 const setText = document.body.querySelector("#set-text");
